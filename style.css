@@ -3,6 +3,8 @@
    src="Museo700-Regular.otf";
 }
 
+@media all and (min-width:640px)
+{}
 h1
 {
     color: #3160F4;
@@ -15,7 +17,14 @@ h2
     font-size: 1.5em;
 }
 
+.burger-check {
+  display: none;
+}
 
+label
+{
+   display: none; 
+}
 
 body
 {
@@ -43,7 +52,6 @@ nav
     text-align: center;
     margin: 0;
     width: 100%;
-    
 
 }
 a.menu
@@ -55,9 +63,11 @@ a.menu
     font-weight: bold;
     display: inline-block;
     color: white;
-   
 }
-
+.contactt button
+{
+    display: none;
+}
 .center
 {
     text-align: center;
@@ -85,7 +95,6 @@ display: table-cell;
 display: flex;
 align-items: center;
 justify-content: center;
-
 height: 100%;
 width: 100%;
 }
@@ -164,7 +173,8 @@ width: 100%;
 
 .mapa
 {
-   display: table-cell;
+
+display: table-cell;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -174,17 +184,36 @@ height: 100%;
 
 .lewa
 {
-    
+   
     display: inline-block;
     width: 50%;
 }
 
+
 .prawa
 {
-    
    display: inline-block; 
     width: 50%;
 }
+
+
+
+/*
+#triangle {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+	width: 10%;
+	height: 100%;
+	border-bottom: 10em solid #F34A53;
+	border-left: 100px solid transparent;
+    margin: 0 0 0 0 ;
+    
+}
+*/
+
+
 
 #allin
 {
@@ -250,20 +279,24 @@ height: 100%;
 
 .contact
 {
-    width: 100%;
+    
+width: 100%;
 display: table-cell;
+align-items: center;
 display: flex;
 justify-content: center;
+text-decoration: none;
 }
 
 .contact button
 {
-    background-color: #2E5DF0;
-    color: white;
-    border: none;
-    width:150%; 
-    padding: 10% 10%;
-    font-size: 1em;
+     
+background-color: #2E5DF0;
+color: white;
+list-style: none;
+border: none;
+padding: 20%;
+font-size: 1em;
 }
 
 #form p.copy {
@@ -352,4 +385,267 @@ width: 100%;
 {
     visibility: hidden;
     margin: 0% 0% 0% 0%;
+}
+
+
+@media all and (max-width:640px)
+{
+   body
+    
+{
+    margin: 0%;
+    padding: 0;
+    width: 100wh;
+   
+
+} 
+    
+/*menu hamburgerowe*/
+    
+.burger {
+   
+    position:fixed;
+    right: 50%;
+    top: 5%;
+
+  display: inline-block;
+  border: 0;
+  background: #3160F4;
+  outline: 0;
+ 
+  cursor: pointer;
+  border-bottom: 4px solid white;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out;
+}
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+.burger-check:checked ~ .burger:before {
+    
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger-check:checked ~ .burger:after {
+    
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+/*menu*/
+nav
+    {
+    position: fixed;
+    right: 20px;
+    top: 15%;
+    }
+    
+a.menu
+{
+    border:solid;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    border-width: 1px;
+    border-color: white;
+    }
+    
+
+
+header
+{
+    width: 100%;
+}
+
+section
+{
+    width: 100%;
+}
+    
+article
+{
+    width: 100%;
+}
+
+.mapa
+{
+    display:block;
+    width: 100%;
+}
+.lewa
+{
+    width: 100%;
+}
+.prawa
+{
+    width: 100%;
+    margin: 0 0 1% 0;
+}
+
+
+     #form
+    {
+    display: block;
+    width:100%; 
+    }
+
+
+#form textarea
+{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#allin
+    {
+        width: 100%;
+    }
+    
+#form input {
+    margin: 0px 0px 3px 0px;
+    padding:0;
+    float: none;
+    display: block;
+	width:100%; 
+}
+
+#textsubmit
+{
+   
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 101%;
+}
+
+/*oferta*/
+    
+.info
+    {
+        
+        display: inline-block;
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        border-bottom:solid;
+        text-align: left;
+       
+    }
+    
+    .info img
+    {
+        width: 70%;
+        margin: 5% 0;
+    }
+    
+    
+.contactt
+{
+width: 100%;
+display:block
+}
+
+.contactt button
+{
+     
+background-color: #2E5DF0;
+color: white;
+list-style: none;
+border: none;
+padding: 3%;
+font-size: 1em;
+margin: 5% 0;
+}
+    
+    
+    /*onas*/
+    
+    .allonas
+    {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom:solid;
+        text-align: left;
+    }
+    
+    .abim
+    {
+        width: 100%;
+    }
+    
+    
+    .abim img
+    {
+        display: inline-block;
+    width: 100%;    
+    }
+    
+    
+
+
+.nagtek
+{
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 5% 0;
+}
+
+    
+    
 }
