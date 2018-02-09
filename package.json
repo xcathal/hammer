@@ -1,0 +1,31 @@
+{
+  "name": "hammer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server",
+    "dev": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcathal/hammer.git"
+  },
+  "author": "Marcin Lasak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcathal/hammer/issues"
+  },
+  "homepage": "https://github.com/xcathal/hammer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {}
+}
