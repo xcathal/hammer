@@ -1,0 +1,643 @@
+@import "./variables";
+@import "./header";
+
+
+ h2
+ {
+     color: #111E3A;
+     font-size: 1.5em;
+ }
+ 
+ .burger-check {
+   display: none;
+ }
+ 
+ label
+ {
+    display: none; 
+ }
+ 
+ body
+ {
+     margin: 0% 3%;
+     padding: 0;
+     width: 100vw;
+     height: auto;
+    
+ }
+ 
+ 
+ header img
+ {
+     display: block;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+   
+     
+ }
+ 
+ nav
+ {
+     background-color: #2E5DF0;
+     text-align: center;
+     margin: 0;
+     width: 100%;
+ 
+ }
+ a.menu
+ {
+     text-decoration: none;
+     text-align: center;
+     padding: 1% 5%;
+     margin: 0px;
+     font-weight: bold;
+     display: inline-block;
+     color: white;
+ }
+ .contactt button
+ {
+     display: none;
+ }
+ .center
+ {
+     text-align: center;
+ }
+ 
+ 
+ 
+ article
+ {
+     font-size: 1em;
+     color: gray;
+     text-align: left;
+     width: 65%;
+     margin: 4% auto;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ .allonas
+ {
+ display: table-cell;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ width: 100%;
+ }
+ 
+ .allonas img
+ {
+     width: 100%;
+   
+ }
+ 
+ .abim
+ {
+    
+     display: inline-block;
+     width: 49%;
+     margin: 0 1%;
+     padding: 0;
+     clip: rect(50% 20px 30px);
+ }
+ .nagtek
+ {
+     width: 49%;
+     display: inline-block;
+     padding: 0 0 5% 0;
+ }
+ 
+ 
+ 
+ 
+ .info
+ {
+     display: inline-block;
+     width: 28%;
+     margin: 0% 2%;
+ }
+ 
+ 
+ 
+ .info img
+ {
+     height: 500%;
+     width: 100%;
+ }
+ 
+ 
+ 
+ /* #imagehome
+ {
+     
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ */
+ 
+ /*#imagehome img
+ {
+     
+     display: block;
+     float: left;
+     width: 33.33%;
+     margin: 0;
+     padding: 0;
+ }
+ */
+ 
+ #imagehome img
+ {
+     
+     display: block;
+     width: 99.99%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .mapa
+ {
+ 
+ display: table-cell;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+  width: 100%;
+ }
+ 
+ .lewa
+ {
+    
+     display: inline-block;
+     width: 50%;
+ }
+ 
+ 
+ .prawa
+ {
+    display: inline-block; 
+     width: 50%;
+ }
+ 
+ 
+ 
+ /*
+ #triangle {
+     display: block;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 10%;
+     height: 100%;
+     border-bottom: 10em solid #F34A53;
+     border-left: 100px solid transparent;
+     margin: 0 0 0 0 ;
+     
+ }
+ */
+ 
+ 
+ 
+ #allin
+ {
+     
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     float: left;
+     display: inline-block;
+     width: 48%;
+ }
+ 
+ 
+ #form {
+ 
+     width:60%; 
+     height: 100%;
+ }
+ 
+ #form label {
+     display:block;
+   
+ }
+ 
+ #form textarea
+ {
+     resize: none;
+     box-sizing: border-box;
+     
+     display: block;
+     width: 100%; 
+     height: 100%;
+     padding: auto;
+     margin: 0;
+    
+ }
+ 
+ #form input {
+     margin: 0px 0px 9px 0px;
+     float: none;
+     display: block;
+     width:100%; 
+ }
+ 
+ #textsubmit
+ {
+     display: block;
+     float: left; 
+     height: 100%;
+     margin: 0 0 0 2%;
+     padding: 0;
+     width: 50%;
+ }
+ 
+ #form input#submit {
+     margin: 2% 0 2% 0%;
+     width:20%; 
+     float: right; 
+     background-color: #2E5DF0;
+     color: white;
+     border: none;
+ }
+ 
+ .contact
+ {
+     
+ width: 100%;
+ display: table-cell;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ text-decoration: none;
+ }
+ 
+ .contact button
+ {
+      
+ background-color: #2E5DF0;
+ color: white;
+ list-style: none;
+ border: none;
+ padding: 20%;
+ font-size: 1em;
+ }
+ 
+ #form p.copy {
+     color:#555555; /* ustawiamy kolor czcionki */
+     margin-bottom:0px; /* resetujemy margines dolny */
+     font-size:12px; /* ustawiamy rozmiar czcionki */
+     text-align: center; /* wyśrodkowywujemy tekst */
+ }
+ 
+ #form p.copy a {
+     color:#555555;/* ustawiamy kolor czcionki */ 
+     text-decoration: none; /* usuwamy podkreślenie linku */
+     font-weight:bold; /* pogrubiamy czcionkę */
+ }  
+ 
+ footer
+ {
+     clear: left;
+     width: 100%;
+     height:10em;
+ 
+     }
+     
+ .wtyk
+ {
+     height: 50%;
+ }
+ 
+ .footerup
+ {
+ display: block;
+ background-image: url(stopgora.png);
+ background-size: 100% 100%;
+ text-align: center;
+ margin: 0;
+ height: 50%;
+ color: white;
+ }
+     
+ /*.footerup img
+ {
+     height: 50%;
+     width: 3%;
+     margin: 2% 0 0 0;
+ display: inline;
+ }
+ */
+      
+    
+ 
+ .footerdown
+ {
+     
+     background-image: url(stopdol.png);
+     background-size: 100% 100%;
+     color: white;
+     text-align:center;
+     height: 50%;
+     padding: 0 0% 0 4%;
+     white-space: nowrap;
+ 
+  
+ }
+ 
+     
+ 
+ .foot
+ {
+ display: table-cell;
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ height: 100%;
+ width: 100%;
+ }
+ 
+ .wtyk p
+ {
+     display: inline-block;
+     color: royalblue;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .footerdown p
+ {
+     visibility: hidden;
+     margin: 0% 0% 0% 0%;
+ }
+ 
+ 
+ @media all and (max-width:640px)
+ {
+    body
+     
+ {
+     margin: 0%;
+     padding: 0;
+     width: 100vw;
+    
+ 
+ } 
+     
+ /*menu hamburgerowe*/
+     
+ .burger {
+    
+     position:fixed;
+     right: 50%;
+     top: 5%;
+ 
+   display: inline-block;
+   border: 0;
+   background: #3160F4;
+   outline: 0;
+  
+   cursor: pointer;
+   border-bottom: 4px solid white;
+   width: 28px;
+   transition: border-bottom 1s ease-in-out;
+   -webkit-transition: border-bottom 1s ease-in-out;
+ }
+ .burger::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+ }
+ .burger:before {
+   content: "";
+   display: block;
+   border-bottom: 4px solid white;
+   width: 100%;
+   margin-bottom: 5px;
+   transition: -webkit-transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+   -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+ .burger:after {
+   content: "";
+   display: block;
+   border-bottom: 4px solid white;
+   width: 100%;
+   margin-bottom: 5px;
+   transition: -webkit-transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+   -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+ 
+ .burger-check {
+   display: none;
+ }
+ 
+ .burger-check:checked ~ .burger {
+   border-bottom: 4px solid transparent;
+   transition: border-bottom 0.8s ease-in-out;
+   -webkit-transition: border-bottom 0.8s ease-in-out;
+ }
+ .burger-check:checked ~ .burger:before {
+     
+   transform: rotate(-405deg) translateY(1px) translateX(-3px);
+   -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+   transition: -webkit-transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+   -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+ .burger-check:checked ~ .burger:after {
+     
+   transform: rotate(405deg) translateY(-4px) translateX(-5px);
+   -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+   transition: -webkit-transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+   -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+ 
+ .navigation {
+   overflow: hidden;
+   max-height: 0;
+   -webkit-transition: max-height 0.5s ease-in-out;
+   transition: max-height 0.5s ease-in-out;
+ }
+ 
+ .burger-check:checked ~ .navigation {
+   max-height: 500px;
+   -webkit-transition: max-height 0.5s ease-in-out;
+   transition: max-height 0.5s ease-in-out;
+ }
+ /*menu*/
+ nav
+     {
+     position: fixed;
+     right: 20px;
+     top: 15%;
+     }
+     
+ a.menu
+ {
+     border:solid;
+         width: 100%;
+         margin: 0;
+         padding: 0;
+     border-width: 1px;
+     border-color: white;
+     }
+     
+ 
+ 
+ header
+ {
+     width: 100%;
+ }
+ 
+ section
+ {
+     width: 100%;
+ }
+     
+ article
+ {
+     width: 100%;
+ }
+ 
+ .mapa
+ {
+     display:block;
+     width: 100%;
+ }
+ .lewa
+ {
+     width: 100%;
+ }
+ .prawa
+ {
+     width: 100%;
+     margin: 0 0 1% 0;
+ }
+ 
+ 
+      #form
+     {
+     display: block;
+     width:100%; 
+     }
+ 
+ 
+ #form textarea
+ {
+     box-sizing: border-box;
+     margin: auto;
+ }
+ 
+ #allin
+     {
+         width: 100%;
+     }
+     
+ #form input {
+     margin: 0px 0px 3px 0px;
+     padding:0;
+     float: none;
+     display: block;
+     width:100%; 
+ }
+ 
+ #textsubmit
+ {
+    
+     display: block;
+     margin: 0;
+     padding: 0;
+     width: 101%;
+ }
+ 
+ /*oferta*/
+     
+ .info
+     {
+         
+         display: inline-block;
+         width: 70%;
+         margin: 0;
+         padding: 0;
+         border-bottom:solid;
+         text-align: left;
+        
+     }
+     
+     .info img
+     {
+         width: 70%;
+         margin: 5% 0;
+     }
+     
+     
+ .contactt
+ {
+ width: 100%;
+ display:block
+ }
+ 
+ .contactt button
+ {
+      
+ background-color: #2E5DF0;
+ color: white;
+ list-style: none;
+ border: none;
+ padding: 3%;
+ font-size: 1em;
+ margin: 5% 0;
+ }
+     
+     
+     /*onas*/
+     
+     .allonas
+     {
+         display: inline-block;
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         border-bottom:solid;
+         text-align: left;
+     }
+     
+     .abim
+     {
+         width: 100%;
+     }
+     
+     
+     .abim img
+     {
+         display: inline-block;
+     width: 100%;    
+     }
+     
+     
+ 
+ 
+ .nagtek
+ {
+     width: 100%;
+     display: inline-block;
+     padding: 0 0 5% 0;
+ }
+ 
+     
+     
+ }
+ 
