@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 const plumber = require('gulp-plumber');
-const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('pug', () => {
@@ -20,19 +19,12 @@ gulp.task('sass', () => {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('.'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('.'));
 })
 
 gulp.task('watch', function () {
-
-    browserSync.init({
-        server: "."
-    });
-
     gulp.watch('./styles/**/*.scss', ['sass']);
     gulp.watch('./templates/**/*.pug', ['pug']);
-    gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('build', ['sass', 'pug'])
