@@ -43,8 +43,13 @@ $message = $_POST['message'];
     
 
     $mail->send();
-    echo 'Message has been sent';
-    header("Location: kontakt.html");
+  
+print("Mail został wysłany. Za 5 sekund zostaniesz przekierowany do strony głównej.");
+header('Refresh: 5; url=kontakt.html');
+
+  
+   
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    
 }
