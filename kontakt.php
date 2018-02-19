@@ -10,6 +10,7 @@
     </form>
   </head>
   <body>
+      
     <header><img src="img/banu.png" alt="baner"></header>
     <input class="burger-check" id="burger-check" type="checkbox">
     <label class="burger" for="burger-check"></label>
@@ -57,7 +58,7 @@
              Umów się na bezpłatną wycenę. 
          <p>Potrzebny elektryk ?</p></div>
            
-               <div class="fotd1">
+               <div class="fotd">
           <p>Zadzwoń:</p> 501 540 292
               </div> 
     
@@ -69,7 +70,7 @@
                 © Copyright hamer.pl 2016. All rights reserved. </div>
             <img src="img/H.png">
             <div class="fotd">
-          Designed by Aztharoth 
+          Designed by Aztharoth coded by marcin lasak
             </div>
       
       </div>
