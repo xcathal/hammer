@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="styles.css")
+    form(method="post" action="form.php")
+      title Document
+  body
+    include _header.pug
+    section
+      article
+        .center
+          h1 Kontakt
+        .mapa
+          .lewa
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.
+            h2 Zadzwoń do nas !
+            p
+              | 501 540 292 // kontakt@hamer.pl
+              br
+              |                 ul. Wrzosowa 15, Szymocice
+              br
+              |                 47-440 Szymocice
+          .prawa
+            #triangle
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.9838657289442!2d18.37293191601531!3d50.161438379436476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711413b65613ce3%3A0x56ee392092f6b04b!2sWrzosowa+15%2C+47-440+Szymocice!5e0!3m2!1spl!2spl!4v1518039597946" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen="")
+      .mapa
+        #form
+          #allin
+            input(name="name" placeholder="Name")
+            input(name="email" type="email" placeholder="Email")
+            input(name="subject" placeholder="Subject")
+          #textsubmit
+            textarea(name="message" placeholder="Wiadomość" rows="5")
+            input#submit(name="submit" type="submit" value="Wyślij")
+    footer
+      .footerup
+        .wtyk
+          .foot
+          |                      Umów się na bezpłatną wycenę. 
+          p Potrzebny elektryk ?
+          br
+          p Zadzwoń:
+          |  501 540 292
+      .footerdown
+        .foot
+          | © Copyright hamer.pl 2016. All rights reserved. 
+          p  ..................
+          | Designed by Aztharoth design Coded by Marcin Lasak
