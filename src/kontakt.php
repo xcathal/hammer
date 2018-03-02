@@ -53,7 +53,7 @@
    <footer>
       <div class="footerup">
       
-            <img src="img/wtyk.png">
+            <img src="./img/wtyk.png">
          <div class="fotup"> 
              Umów się na bezpłatną wycenę. 
          <p>Potrzebny elektryk ?</p></div>
@@ -68,7 +68,7 @@
         
             <div class="fotup"> 
                 © Copyright hamer.pl 2016. All rights reserved. </div>
-            <img src="img/H.png">
+            <img src="./img/H.png">
             <div class="fotd">
           Designed by Aztharoth coded by marcin lasak
             </div>
