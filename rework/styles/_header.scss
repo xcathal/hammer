@@ -1,5 +1,21 @@
-h1
-{
-    color: $blue;
-    font-size: 2em;
+.header {
+    width: 100%;
+    background-image: url("./img/desktop/baner.png");
+    background-size: cover;
+    padding-top: 6em;
+
+    &__logo {
+        margin: 0 auto 20px;
+        width: 78px;
+        display: block;
+        min-height: 20px;
+    }
+
+    &__title {
+        color: $white-100;
+        padding-bottom: 1.5em;
+        text-align: center;
+        font-size: 4em;
+        margin: 0;
+    }
 }

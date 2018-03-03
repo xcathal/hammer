@@ -1,0 +1,70 @@
+.offer {
+    margin: 0 auto;
+    max-width: 1330px;
+    text-align: center;
+    background-color: $white-700;
+
+    &__title {
+        color: $blue-500;
+        font-weight: 700;
+        font-size: 2em;
+        margin: 0;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    &__description {
+        color: $gray-700;
+        max-width: 40em;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__boxes {
+        text-align: center;  
+        margin: 2em 0;      
+
+        .single-offer  {
+            text-align: center;
+            display: inline-block;
+            margin: 2%;
+            padding: 0;
+            width: 28%;
+            background-color: $white-100;
+
+            &__img {
+                min-height: 100px;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            &__title {
+                color: $gray-500;
+                font-weight: 700;
+                font-size: 1.2em;
+                padding:  0 20px;
+            }
+
+            &__description {
+                color: $gray-700;
+                padding: 5px 20px;
+            }
+        }
+    }
+
+    .other-offers {
+        &__title {
+            color: $blue-700;
+            font-size: 1.4em;
+            margin-top: 3em;
+            font-weight: 700;
+        }
+
+        &__description {
+            color: $gray-700;
+            margin: 0 auto;
+            padding-bottom: 3em;
+            max-width: 40em;
+        }
+    }
+}

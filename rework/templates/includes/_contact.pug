@@ -1,0 +1,24 @@
+main.contact
+    h2.contact__title Kontakt
+    section.contact__box
+        .contact__content
+            p.contact__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aut, fugiat mollitia expedita sunt, velit, esse tenetur veniam nihil sapiente eligendi sit cupiditate atque sequi beatae facere. Minus, reprehenderit reiciendis.Odit aspernatur totam enim numquam veritatis fugit ducimus nisi dolorem
+            h3.contact__call Zadzwoń do Nas !
+            p.contact__info
+                a(href="tel:501540292") 501 540 292
+                span  // 
+                a(href="mailto:kontakt@hamer.pl") kontakt@hamer.pl
+            p.contact__info ul. Wrzosowa 15, Szymocice
+            p.contact__info 47-440 Szymocice
+        .contact__map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2555.9838657289442!2d18.37293191601531!3d50.161438379436476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711413b65613ce3%3A0x56ee392092f6b04b!2sWrzosowa+15%2C+47-440+Szymocice!5e0!3m2!1spl!2spl!4v1518039597946" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="")
+        
+    section.contact__form
+        form(action="/kontakt" method="POST")
+            .contact__form-left
+                input.contact__form-name(type="text" name="name" placeholder="Imię i nazwisko")
+                input.contact__form-email(type="email" name="email" placeholder="Adres Email")
+                input.contact__form-subject(type="subject" name="subject" placeholder="Tytuł wiadomości")
+            .contact__form-right
+                textarea.contact__form-message(rows="5" name="message" placeholder="Wiadomość")
+                button.contact__form-submit(type="submit") Wyślij

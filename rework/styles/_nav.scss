@@ -1,0 +1,33 @@
+.nav {
+    background-color: $blue-500;
+    margin: 0;
+    padding: 0;
+
+    &__list {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 0;
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    &__link {
+        color: $white-100;
+        line-height: 46px;
+        font-size: 1.4em;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
