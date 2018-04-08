@@ -29,6 +29,13 @@
                     transform: skew(15deg);
                 }
             }
+
+            .about__box-content {
+
+                .about__box-description {
+                    padding-left: 0;
+                }
+            }
         }
     }
 
@@ -54,6 +61,8 @@
     &__box-content {
         width: 50%;
         float: left;
+        line-height: 1.6;
+        font-size: 1.15em;
     }
 
     &__box-title {
