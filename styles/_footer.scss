@@ -1,0 +1,47 @@
+.footer {
+    color: $white-100;
+    background-color: $blue-500;
+    padding: 35px 0;
+    text-align: center;
+
+    &__copyright {
+        display: inline-block;
+        width: 44%;
+        font-size: .9em;
+        text-align: right;
+
+        @media all and (max-width: 900px) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
+        }
+    }
+
+    &__icon {
+        width: 34px;
+        vertical-align: middle;
+        margin-right: 30px;
+        margin-left: 30px;
+        display: inline-block;
+
+        @media all and (max-width: 900px) {
+            display: block;
+            margin: 15px auto;
+        }
+    }
+
+    &__author {
+        width: 44%;
+        text-align: left;
+        font-size: .9em;
+        display: inline-block;
+
+        @media all and (max-width: 900px) {
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.homepage {
+    overflow: hidden;
+
+    &__title {
+        color: $blue-500;
+        font-weight: 700;
+        font-size: 2em;
+        margin: 0 auto;
+        width: 90%;
+        padding: 1em 0 .5em;
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: $blue-700;
+        font-weight: 700;
+        font-size: 1.5em;
+        margin: 0 auto;
+        width: 90%;
+        padding: 3em 0 .2em;
+        text-align: center;
+    }
+
+    &__description {
+        color: $gray-700;
+        width: 90%;
+        max-width: 40em;
+        margin: 0 auto;
+        text-align: center;
+
+        a {
+            color: $blue-500;
+            text-decoration: none;
+        }
+    }
+
+    &__subdescription {
+        color: $gray-700;
+        width: 90%;
+        max-width: 40em;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.5;
+
+        a {
+            color: $blue-500;
+            text-decoration: none;
+        }
+    }
+
+    &__contact-link {
+        background-color: $blue-500;
+        margin: 40px auto;
+        display: block;
+        border: 0;
+        text-decoration: none;
+        padding: 8px 18px;
+        font-size: 24px;
+        width: 160px;
+        text-align: center;
+        color: $white-100;
+
+        @media all and (max-width: 768px) {
+            width: 180px;
+            padding: 8px 18px;
+            font-size: 24x;
+        }
+    }
+
+    &__solutions {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+
+    &__logos {
+        position: absolute;
+        z-index: 1;
+        left: 60%;
+        top: 0;
+        bottom: 0;
+
+        @media all and (max-width: 600px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__logos-background {
+        width: 260px;
+        transform: skew(-15deg);
+        background-color: $white-100;
+        height: 100%;
+    }
+
+    &__logo1 {
+        position: absolute;
+        top: 7%;
+        left: 45%;
+        height: 120px;
+    }
+
+    &__logo2 {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        height: 40px;
+    }
+
+    &__logo3 {
+        position: absolute;
+        top: 72%;
+        left: 10%;
+        height: 60px;
+    }
+
+    &__slider {
+        text-align: center;
+        height: 475px;
+        width: 1920px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 20px;
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+
+    &__slider-img {
+        width: 33.33%;
+        height: 100%;
+        display: block;
+        float: left;
+    }
+}

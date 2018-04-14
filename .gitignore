@@ -1,2 +1,9 @@
 node_modules
-src/node_modules
+.env
+about.html
+contact.html
+failure-contact.html
+index.html
+offer.html
+styles.css
+success-contact.html
