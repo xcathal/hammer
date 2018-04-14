@@ -1,0 +1,17 @@
+.success-alert {
+    max-width: 720px;
+    width: 90%;
+    color: $gray-700;
+    margin: 2em auto 1em;
+    border-left: 10px solid rgb(20, 187, 40);
+    padding: 0.3em 1em;
+    background-color: rgba(20, 187, 40, 0.1);
+
+    a {
+        color: $blue-500;
+    }
+
+    p {
+        margin: 0.7em;
+    }
+}
